@@ -4,6 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import pl.atom.ekantor.model.Currency;
 
 /**
+ * Repository for Currency entity class
  * Created by Artur on 18.03.2017.
  */
 public interface CurrencyRepository extends JpaRepository<Currency,Long> {

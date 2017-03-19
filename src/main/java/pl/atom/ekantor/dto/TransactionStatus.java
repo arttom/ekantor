@@ -1,6 +1,7 @@
 package pl.atom.ekantor.dto;
 
 /**
+ * ENUM class for transaction statuses
  * Created by Atom on 19.03.2017.
  */
 public enum TransactionStatus {

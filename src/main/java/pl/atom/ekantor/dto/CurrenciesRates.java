@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
+ * DTO which holds data from external webservice.
  * Created by Artur on 18.03.2017.
  */
 public class CurrenciesRates {

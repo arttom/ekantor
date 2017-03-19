@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import java.util.Set;
 
 /**
+ * User entity class for Spring-Security and holding user money value
  * Created by Artur on 18.03.2017.
  */
 @Entity

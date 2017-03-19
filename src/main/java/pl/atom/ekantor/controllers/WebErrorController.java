@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
+ * Controller required by spring to implement Error controller
  * Created by Artur on 18.03.2017.
  */
 @Controller("error")

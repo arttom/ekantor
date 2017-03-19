@@ -13,6 +13,9 @@ import pl.atom.ekantor.respository.UserRepository;
 
 import java.util.HashSet;
 
+/**
+ * UserService interface implementation
+ */
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired

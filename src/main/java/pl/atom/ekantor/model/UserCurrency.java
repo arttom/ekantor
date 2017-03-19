@@ -3,6 +3,7 @@ package pl.atom.ekantor.model;
 import javax.persistence.*;
 
 /**
+ * Entity class for holding user current currencies in the wallet
  * Created by Artur on 18.03.2017.
  */
 @Entity

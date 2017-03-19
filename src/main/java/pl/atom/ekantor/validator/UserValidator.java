@@ -11,6 +11,9 @@ import org.springframework.validation.Validator;
 import pl.atom.ekantor.model.User;
 import pl.atom.ekantor.service.UserService;
 
+/**
+ * Validator for user creation
+ */
 @Component
 public class UserValidator implements Validator {
     @Autowired

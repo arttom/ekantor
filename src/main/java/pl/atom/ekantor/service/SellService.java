@@ -4,6 +4,7 @@ import pl.atom.ekantor.dto.TransactionStatus;
 import pl.atom.ekantor.model.User;
 
 /**
+ * Service interface for selling
  * Created by Atom on 19.03.2017.
  */
 public interface SellService {

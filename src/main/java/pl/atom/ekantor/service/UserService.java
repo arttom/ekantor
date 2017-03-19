@@ -3,6 +3,7 @@ package pl.atom.ekantor.service;
 import pl.atom.ekantor.model.User;
 
 /**
+ * Service interface for user actions
  * Created by Artur on 18.03.2017.
  */
 public interface UserService {

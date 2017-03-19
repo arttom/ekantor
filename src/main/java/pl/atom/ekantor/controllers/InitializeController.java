@@ -16,6 +16,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 /**
+ * Controller responsible for initial setup command of a application
  * Created by Artur on 18.03.2017.
  */
 @Controller

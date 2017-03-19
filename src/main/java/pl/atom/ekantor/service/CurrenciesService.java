@@ -7,6 +7,7 @@ import pl.atom.ekantor.model.UserCurrency;
 import java.util.List;
 
 /**
+ * Service interface for Currencies related methods
  * Created by Artur on 18.03.2017.
  */
 public interface CurrenciesService {

@@ -5,6 +5,7 @@ import pl.atom.ekantor.model.User;
 import pl.atom.ekantor.model.UserCurrency;
 
 /**
+ * Service for currency transfer between accounts
  * Created by Atom on 19.03.2017.
  */
 public interface TransactionService {

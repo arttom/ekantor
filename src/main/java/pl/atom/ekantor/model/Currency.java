@@ -7,6 +7,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
+ * Entity class for Currency object
  * Created by Artur on 18.03.2017.
  */
 @Entity

@@ -1,6 +1,7 @@
 package pl.atom.ekantor.service;
 
 /**
+ * SecurityService interface implementation
  * Created by Artur on 18.03.2017.
  */
 import org.slf4j.Logger;

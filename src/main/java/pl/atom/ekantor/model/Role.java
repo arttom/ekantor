@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 /**
+ * Roles entity class for Spring-Security
  * Created by Artur on 18.03.2017.
  */
 @Entity

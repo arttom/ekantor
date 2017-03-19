@@ -1,6 +1,7 @@
 package pl.atom.ekantor.controllers;
 
 /**
+ * Controller responsible for registration and login
  * Created by Artur on 18.03.2017.
  */
 import org.springframework.beans.factory.annotation.Autowired;

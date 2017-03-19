@@ -15,6 +15,7 @@ import pl.atom.ekantor.respository.CurrencyRepository;
 import java.util.List;
 
 /**
+ * CurrenciesService interface implementation
  * Created by Artur on 18.03.2017.
  */
 @Service

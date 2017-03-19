@@ -21,6 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * Main controller of application. In the future could be divided into different ones for main screen/selling/buying/additional
  * Created by Artur on 18.03.2017.
  */
 @Controller

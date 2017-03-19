@@ -1,0 +1,8 @@
+How to run application:
+application can be started with maven by using command : mvn spring-boot:run
+After first start there is a need to initialize setup which can be done by accessing address
+
+https://address:8080/secret/initialize
+
+This will call a methods required to initialize database values for exchange mechanism.
+
