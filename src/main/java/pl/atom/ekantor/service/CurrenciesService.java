@@ -1,6 +1,8 @@
 package pl.atom.ekantor.service;
 
 import pl.atom.ekantor.model.Currency;
+import pl.atom.ekantor.model.User;
+import pl.atom.ekantor.model.UserCurrency;
 
 import java.util.List;
 
@@ -10,4 +12,8 @@ import java.util.List;
 public interface CurrenciesService {
 
     List<Currency> getCurrenciesRates();
+
+    Currency getCurrencyByCode(String code);
+
+    UserCurrency getUserCurrency(User user, Currency currency);
 }

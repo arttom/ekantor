@@ -4,9 +4,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import pl.atom.ekantor.dto.CurrenciesRates;
 import pl.atom.ekantor.model.Currency;
+import pl.atom.ekantor.model.User;
+import pl.atom.ekantor.model.UserCurrency;
 import pl.atom.ekantor.respository.CurrencyRepository;
 
 import java.util.List;
@@ -14,7 +17,7 @@ import java.util.List;
 /**
  * Created by Artur on 18.03.2017.
  */
-@Component
+@Service
 public class CurrenciesServiceImpl implements CurrenciesService {
 
     @Value("${fp.currencies.url}")
@@ -23,11 +26,29 @@ public class CurrenciesServiceImpl implements CurrenciesService {
     @Autowired
     CurrencyRepository currencyRepository;
 
+    @Autowired
+
+
     @Override
     @Scheduled(initialDelay = 5000, fixedDelay=20000)
     public List<Currency> getCurrenciesRates(){
         List<Currency> currenciesRates = currencyRepository.findAll();
         return currenciesRates;
+    }
+
+    @Override
+    public Currency getCurrencyByCode(String code) {
+        return currencyRepository.findByCode(code);
+    }
+
+    @Override
+    public UserCurrency getUserCurrency(User user, Currency currency) {
+        for(UserCurrency userCurrency : user.getUserCurrencies()){
+            if(userCurrency.getCurrency().getCode().equals(currency.getCode())){
+                return userCurrency;
+            }
+        }
+        return null;
     }
 
     @Scheduled(initialDelay = 5000, fixedDelay=20000)

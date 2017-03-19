@@ -8,4 +8,5 @@ import pl.atom.ekantor.model.Currency;
  */
 public interface CurrencyRepository extends JpaRepository<Currency,Long> {
     Currency findByName(String name);
+    Currency findByCode(String code);
 }

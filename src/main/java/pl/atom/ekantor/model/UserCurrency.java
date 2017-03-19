@@ -55,4 +55,13 @@ public class UserCurrency {
     public void setQuantity(Long quantity) {
         this.quantity = quantity;
     }
+
+    public UserCurrency(User user, Currency currency) {
+        this.user = user;
+        this.currency = currency;
+        this.quantity=0L;
+    }
+
+    public UserCurrency() {
+    }
 }

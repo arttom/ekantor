@@ -3,20 +3,24 @@
 JEBANIUTKIE WALUTY <br/>
 <table>
     <tr>
-        <th width="30%">Currency name</th>
-        <th width="30%">Currency code</th>
-        <th width="20%">Currency buy value</th>
-        <th width="20%">Currency update date</th>
+        <th width="10%">Currency</th>
+        <th width="10%">Unit</th>
+        <th width="20%">Value</th>
+        <th width="30%">Actions</th>
     </tr>
     <c:forEach items="${currenciesRates}" var="currency">
         <tr>
-            <td>${currency.name}</td>
             <td>${currency.code}</td>
+            <td>${currency.unit}</td>
             <td>${currency.purchasePrice}</td>
-            <td>${currency.updateDate}</td>
+            <td><a href="${contextPath}/ekantor/buy/${currency.code}">
+                <button>Buy</button>
+            </a></td>
         </tr>
     </c:forEach>
 </table>
 <script>
+function buy(currencyCode){
 
+}
 </script>

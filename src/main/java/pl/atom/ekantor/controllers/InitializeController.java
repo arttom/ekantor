@@ -43,10 +43,8 @@ public class InitializeController {
         userService.save(user);
         List<Currency> currenciesRates = currenciesService.getCurrenciesRates();
         for(Currency currency : currenciesRates){
-            UserCurrency exchangeCurrency = new UserCurrency();
-            exchangeCurrency.setCurrency(currency);
+            UserCurrency exchangeCurrency = new UserCurrency(user,currency);
             exchangeCurrency.setQuantity(10000L);
-            exchangeCurrency.setUser(user);
             userCurrencyRepository.save(exchangeCurrency);
         }
         return "init";
