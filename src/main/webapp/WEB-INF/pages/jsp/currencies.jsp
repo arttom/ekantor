@@ -1,6 +1,5 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-JEBANIUTKIE WALUTY <br/>
 <table>
     <tr>
         <th width="10%">Currency</th>
